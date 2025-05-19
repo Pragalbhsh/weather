@@ -22,7 +22,7 @@ geocode( input ,(error,{latitude, longitude ,location}) =>{
     console.log(location)
     console.log(data)
    
-    
+    console.log("working")
         
       })
 })
