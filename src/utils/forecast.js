@@ -11,7 +11,9 @@ request({url ,json:true},(error,{body})=>{
         callback("wrong inputs",undefined)
     }
     else{
-        callback(undefined,body.current.condition.text + " . it is currently " + body.current.temp_c + " but feels like " + body.current.feelslike_c) 
+        callback(undefined,body.current.condition.text + " . it is currently " + body.current.temp_c + " but feels like " + body.current.feelslike_c
+            + " . humidity is " + body.current.humidity + " % "
+        ) 
     }
 }
 
